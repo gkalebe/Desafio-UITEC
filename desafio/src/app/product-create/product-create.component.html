@@ -1,0 +1,16 @@
+<htmL>
+    <div>
+        <h2>Criar Novo Produto</h2>
+      
+        <form (submit)="createProduct()">
+          <label for="name">Nome do Produto:</label>
+          <input type="text" id="name" [(ngModel)]="newProduct.name" required>
+          <label for="price">Preço:</label>
+          <input type="number" id="price" [(ngModel)]="newProduct.price" required>
+          <label for="stockQuantity">Quantidade em Estoque:</label>
+          <input type="number" id="stockQuantity" [(ngModel)]="newProduct.stockQuantity" required>
+          <button type="submit">Criar Produto</button>
+        </form>
+      </div>
+      
+</htmL>

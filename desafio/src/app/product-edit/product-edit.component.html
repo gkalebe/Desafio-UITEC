@@ -1,0 +1,14 @@
+<div>
+    <h2>Editar Produto</h2>
+  
+    <form (submit)="updateProduct()">
+      <label for="editName">Nome do Produto:</label>
+      <input type="text" id="editName" [(ngModel)]="editedProduct.name" name="name" required>
+      <label for="editPrice">Preço:</label>
+      <input type="number" id="editPrice" [(ngModel)]="editedProduct.price" name="price" required>
+      <label for="editStockQuantity">Quantidade em Estoque:</label>
+      <input type="number" id="editStockQuantity" [(ngModel)]="editedProduct.stockQuantity" name="stockQuantity" required>
+      <button type="submit">Atualizar Produto</button>
+    </form>
+  </div>
+  

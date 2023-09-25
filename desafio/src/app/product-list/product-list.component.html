@@ -1,0 +1,13 @@
+<htmL>
+<div>
+    <h2>Lista de Produtos</h2>
+    <!-- Lista de produtos -->
+    <ul>
+      <li *ngFor="let product of products">
+        {{ product.name }} - {{ product.price }} - {{ product.stockQuantity }}
+        <button (click)="editProduct(product)">Editar</button>
+        <button (click)="deleteProduct(product.id)">Excluir</button>
+      </li>
+    </ul>
+  </div>
+</htmL>
